@@ -6,7 +6,7 @@
     "pnpm": "7"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "PORT=3005 next dev & lt --port 3005 --subdomain opchat",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
@@ -19,7 +19,9 @@
     "@rainbow-me/rainbowkit": "0.5.2",
     "@web3-scaffold/contracts": "workspace:*",
     "classnames": "^2.3.1",
+    "eris": "^0.17.1",
     "ethers": "5.7.0",
+    "iron-session": "^6.3.1",
     "next": "12.3.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -33,6 +35,7 @@
     "autoprefixer": "^10.4.0",
     "eslint-config-next": "^12.1.6",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "localtunnel": "^2.0.2",
     "postcss": "^8.4.5",
     "tailwindcss": "^3.1.8",
     "typescript": "^4.5.5"
